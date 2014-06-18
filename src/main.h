@@ -54,7 +54,7 @@ static const int64 DUST_SOFT_LIMIT = 100000; // 0.001 MARU
 /** Dust Hard Limit, ignored as wallet inputs (mininput default) */
 static const int64 DUST_HARD_LIMIT = 1000;   // 0.00001 MARU mininput
 /** No amount larger than this (in satoshi) is valid */
-static const int64 MAX_MONEY = 84000000 * COIN;
+static const int64 MAX_MONEY = 15000000 * COIN;
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 100;
@@ -63,7 +63,7 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 /** Maximum number of script-checking threads allowed */
 static const int MAX_SCRIPTCHECK_THREADS = 16;
 
-#define CHARITY_ADDRESS "a2cccadeafb9da926daaa7e9b90260eafa0b102b" // T1UQpFqGkqyEx4iJFWpw6kSy1yigVbe7GH
+#define CHARITY_ADDRESS ""
 extern CScript CHARITY_SCRIPT;
 
 
